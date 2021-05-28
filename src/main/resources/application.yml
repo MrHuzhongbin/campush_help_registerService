@@ -1,0 +1,13 @@
+# 应用名称
+spring:
+  application:
+    name: CAMPUSH-HELP-REGISTER
+server:
+  port: 10009
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:${server.port}
+    fetch-registry: false #是否注册自己
+    register-with-eureka: false #是否拉取服务列表
+
